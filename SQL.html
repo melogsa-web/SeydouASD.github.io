@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">PROJET:</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Vue d'ensemble</a></li>
+							<li class="active"><a href="SQL.html">SQL</a></li>
+							<li><a href="EXCEL.html">Excel</a></li>
+							<li><a href="TABLEAU.html">Tableau</a></li>
+							<li><a href="PYTHON.html">Python</a></li>
+							<li><a href="POWERBI.html">Power BI</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/seydou-abdou-salam-diallo-819136160/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/melogsa-web" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date"></span>
+									<h1>SQL</h1>
+									<p><strong><u>Projet 1 :</u></strong> Nettoyage et Préparation de Données (SQL – Dataset sur les licenciements mondiaux) 
+									<br><strong><u>Objectif du projet :</u></strong>
+							<p>Mettre en place un pipeline de nettoyage de données afin d’obtenir un jeu de données fiable et standardisé, prêt pour l’analyse exploratoire et la modélisation.
+									</p>
+					<strong> Principales réalisations :</strong>
+					<ul>
+						<li>Création d’une table de staging pour travailler sur une copie des données brutes et préserver l’intégrité de la source.</li>
+						<li>Détection et suppression des doublons à l’aide de ROW_NUMBER() et de CTEs pour garantir l’unicité des enregistrements.</li>
+					<strong> Standardisation des données</strong> :
+							<ul>
+								<li>Uniformisation des valeurs d’industries (ex. regroupement des variantes de "Crypto").</li>
+								<li>Correction des incohérences géographiques (ex. "United State" vs "United States.").</li>
+								<li>Conversion des dates en format DATE pour faciliter l’analyse temporelle.</li>
+							</ul>
+						</li>
+					<strong> Traitement des valeurs manquantes</strong> :
+							<ul>
+								<li>Remplissage automatique de certains champs nulls en exploitant les doublons partiels.</li>
+								<li>Suppression des enregistrements inutilisables (absence simultanée de total_laid_off et percentage_laid_off).</li>
+								<li>Optimisation de la structure en supprimant les colonnes temporaires utilisées pour l’audit et le suivi du nettoyage.</li>
+
+							</ul>
+						</li>
+					<strong> Compétences démontrées</strong> : 
+					<li>SQL avancé (CTE, fonctions de fenêtrage, manipulation de texte et dates, gestion des valeurs nulles), 
+						préparation de données pour l’analytique, bonnes pratiques de data engineering.</li>
+					</ul>
+
+					<ul class="actions special">
+									<li><a href="https://github.com/melogsa-web/Analyste-de-donne-s-Portofolio-projects/blob/master/SQL/Portfolio%20Project%20-%20Data%20Cleaning.sql" class="button large">Voir le code projet sur Github  </a></li>
+								</ul>
+					<p><strong><u>Projet 2 :</u></strong> Analyse Exploratoire de Données (SQL – Dataset sur les licenciements mondiaux) 
+									<br><strong><u>Objectif du projet :</u></strong>
+							<p>Explorer un dataset sur les licenciements à l’échelle mondiale afin d’identifier des tendances,
+							anomalies et insights pertinents pour la compréhension des dynamiques économiques récentes.</p>
+
+					<strong> Exploration descriptive :</strong>
+					<ul>
+						<li>Identification des valeurs extrêmes (MAX, MIN).</li>
+						<li>Analyse de la distribution des licenciements par entreprise, secteur, localisation, pays et phase de financement.</li>
+					<strong> Analyse comparative</strong> :
+							<ul>
+								<li>Classement des entreprises ayant connu le plus grand nombre de licenciements cumulés.</li>
+								<li>Repérage des startups ayant licencié 100 % de leur effectif.</li>
+								
+							</ul>
+						</li>
+					<strong> Analyse temporelle</strong> :
+							<ul>
+								<li>Agrégation des licenciements par année et par mois.</li>
+								<li>Mise en place d’une métrique de cumul glissant (rolling total) 
+									des licenciements mensuels pour mesurer l’évolution dans le temps.</li>
+							</ul>
+						</li>
+					<strong> Analyse sectorielle et géographique :</strong> : 
+					<li>Mise en évidence des industries les plus affectées (ex. Tech, Crypto, FinTech).</li>
+					<li>Comparaison des impacts par pays et régions.</li>
+					</ul>
+					<strong> Analyse avancées avec fenêtres analytiques</strong> :
+							<ul>
+								<li>Classement des entreprises les plus touchées par année (DENSE_RANK).</li>
+								<li>Suivi des dynamiques sur plusieurs années.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="actions special">
+									<li><a href="https://github.com/melogsa-web/Analyste-de-donne-s-Portofolio-projects/blob/master/SQL/Portfolio%20Project%20-%20EDA.sql" class="button large">Voir le code projet sur Github  </a></li>
+								</ul>
+					</header>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h4>Adresse:</h4>
+								<p>3175 Chemin Bedford, app 9 <br />
+								Montréal, Québec</p>
+							</section>
+							<section class="split contact">
+								<h4>Email :</h4>
+								<p><a href="#">seydoudiallo888@gmail.com</a></p>
+							</section>
+						</section>
+						<section class="split contact">
+								<h4>Téléphone:</h4>
+								<p><a href="#"> (438) 509-8831</a></p>
+							</section>
+							<section class="split contact">
+								<h4>Réseau Social :</h4>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/seydou-abdou-salam-diallo-819136160/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/melogsa-web" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+							
+					</footer>
+
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
